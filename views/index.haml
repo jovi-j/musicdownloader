@@ -1,4 +1,17 @@
-%form(action="/download" method="post")
-    %h1 Paste youtube link here
-    %input(type="text" name="link")
-    %button(type="submit") Download
+%head
+    %link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css")
+    %link(rel="stylesheet" href="/css/estilos.css")
+%body
+    %div(class="content has-text-centered")
+        %form(action="/download" method="post" class="form")
+            %h1(class="title has-text-white") YTBD3
+            %small(class="has-text-white") Cole o link abaixo e clique em Download
+            %br
+            %input(type="text" class="control field inpt" name="link" placeholder="Ex: https://www.youtube.com/watch?v=8GW6sLrK40k") 
+            %br
+            %br/
+            %button(type="submit" class="button is-info") Download
+            %br
+            %br/
+            %small(class="has-text-white is-12") Feito por 
+            %a(href="http://github.com/jovi-j/") Jovi
